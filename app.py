@@ -52,6 +52,8 @@ if st.button("Predict"):
         'Ambassador', 'Ashok', 'Isuzu', 'Opel'],
         [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31])
 
+    input_data_model = input_data_model.astype(float)
+
     car_price = model.predict(input_data_model)
 
     st.markdown('Car Price is going to be '+ str(car_price[0]))
