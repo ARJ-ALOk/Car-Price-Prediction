@@ -52,13 +52,12 @@ pred = st.button("Predict")
 
 
 if pred:
-    @st.dialog("Car details")
+    @st.dialog("🚗 Car details")
     def show_details():
-        st.header("Car Details:")
         c1, c2, c3 = st.columns([1.5, 1, 1.5])
         with c1:
             with st.container(border=True):
-                st.caption("🚗 Car Model")
+                st.caption("Car Model")
                 st.subheader(car_name)
             with st.container(border=True):  
                 st.caption("Manufactured Year ")
